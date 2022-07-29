@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Room Booking</title>
+    </head>
+    <body>
+        <table>
+            <h1>Room Booking</h1>
+        Visitor Name:<input type="text" maxlength="20" required autofocus ><br><br>
+        No.of Members:<input type="number" maxlength="4" required><br><br>
+        Contact number:<input type="number" pattern="[1-9]+" maxl;ength="10" required><br><br>
+        Email id:<input type="email" maxlength="20" pattern="[A-Za-z]+" maxl;ength="20" required><br><br>
+        Type of food:
+        <input type="radio" name="yesorno" >SouthIndian
+        <input type="radio" name="yesorno" >NorthIndian
+        <input type="radio" name="yesorno" >Chinese
+        <input type="radio" name="yesorno" >Western
+        <br><br>
+        Room Status:
+        <input type="radio" name="yesorno" >AC
+        <input type="radio" name="yesorno" >Non-AC<br><br>
+        Venue Preference:
+        <select>
+            <option value="balconi">Balconi</option>
+            <option value="sea">SeaShore</option>
+        </select><br><br>
+        <button onClick="myFunction()" >book</button>
+        <button onclick="myFunction()">reset</button>
+        <script>
+            function myFunction(){
+                location.replace("success.html");
+            }
+            function myFunction1(){
+                location.replace("fail.html");
+            }
+        </script>
+        </table>
+       
+    </body>
+</html>
